@@ -1,30 +1,62 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div className="wrapper">
+    <h1>Weather App</h1>
+    <p>Check on weather in my city</p>
+    <input type="text" placeholder="Enter city">
+    <button>Check weather</button>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.wrapper {
+  width: 900px;
+  height: 500px;
+  border-radius: 50px;
+  background: #94bbe9;
+  padding: 20px;
+  text-align: center;
+  color: black;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.wrapper h1 {
+  margin-top: 50px;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.wrapper p {
+  margin-top: 20px;
+}
+
+.wrapper input {
+  margin: 10px;
+  background: white;
+  color: #6e2d7d;
+  font-size: 14px;
+  border: 2px solid #6e2d7d;
+  border-radius: 10px;
+  padding: 10px 15px;
+  outline: none;
+}
+
+.wrapper input:focus {
+  border: 2px solid #6e2d7d;
+}
+
+.wrapper button {
+  background: #6e2d7d;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #6e2d7d;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: transform 500ms ease;
+}
+
+.wrapper button:hover {
+  background: white;
+  color: #6e2d7d;
 }
 </style>
