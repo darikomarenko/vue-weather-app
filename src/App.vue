@@ -21,16 +21,16 @@ export default {
   },
   computed: {
     showTemp() {
-      return "Tempetarure is " + this.info.main.temp
+      return "Temperature is " + this.info.main.temp
     },
     showFeelsLikeTemp() {
-      return "Tempetarure feels like " + this.info.main.feels_like
+      return "Temperature feels like " + this.info.main.feels_like
     },
     showMinTemp() {
-      return "Min tempetarure is " + this.info.main.temp_min
+      return "Min temperature is " + this.info.main.temp_min
     },
     showMaxTemp() {
-      return "Max tempetarure is " + this.info.main.temp_max
+      return "Max temperature is " + this.info.main.temp_max
     },
   }
 }
